@@ -17,14 +17,15 @@ struct MenuView: View {
         List(menuItems) { item in
             
             MenuListRow(item: item)
-        
+            
         }
         .listStyle(.plain)
         .onAppear {
             // Call for the data
             menuItems = dataService.getData()
-            
         }
+        
+
     }
 }
 
