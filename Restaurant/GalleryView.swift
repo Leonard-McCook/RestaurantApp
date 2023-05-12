@@ -9,10 +9,34 @@ import SwiftUI
 
 struct GalleryView: View {
     
-    
+    @State var photoData = [String]()
+    var dataService = DataService()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack (alignment: .leading) {
+            Text("Gallery")
+                .font(.largeTitle)
+                .bold()
+            
+            ScrollView {
+                LazyVGrid(columns: [GridItem(),
+                                    GridItem(),
+                                    GridItem()]) {
+                    ForEach(photoData, id: \.self) { p in
+                        
+                        Image(p)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(maxWidth: 130)
+                            .clipped()
+                        
+                    }
+                }
+            }
+        }.onAppear {
+            photoData = dataService.getPhotos()
+        }
     }
 }
 
