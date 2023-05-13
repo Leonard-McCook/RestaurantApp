@@ -19,22 +19,28 @@ struct GalleryView: View {
                 .font(.largeTitle)
                 .bold()
             
-            ScrollView {
-                LazyVGrid(columns: [GridItem(),
-                                    GridItem(),
-                                    GridItem()]) {
-                    ForEach(photoData, id: \.self) { p in
-                        
-                        Image(p)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(maxWidth: 130)
-                            .clipped()
-                        
+            GeometryReader { proxy in
+                ScrollView {
+                    LazyVGrid(columns: [GridItem(spacing: 10),
+                                        GridItem(spacing: 10),
+                                        GridItem(spacing: 10)],
+                              spacing: 10) {
+                        ForEach(photoData, id: \.self) { p in
+                            
+                            Image(p)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(maxWidth: (proxy.size.width-20)/3)
+                                .clipped()
+                        }
                     }
                 }
             }
-        }.onAppear {
+            
+            
+        }
+        .padding(.horizontal)
+        .onAppear {
             photoData = dataService.getPhotos()
         }
     }
