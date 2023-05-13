@@ -20,7 +20,7 @@ struct GalleryView: View {
                 .bold()
             
             GeometryReader { proxy in
-                ScrollView {
+                ScrollView (showsIndicators: false) {
                     LazyVGrid(columns: [GridItem(spacing: 10),
                                         GridItem(spacing: 10),
                                         GridItem(spacing: 10)],
