@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7456C7B2A12EA34002A3F09 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7456C7A2A12EA34002A3F09 /* PhotoView.swift */; };
 		D7CCF8332A06A0460085839D /* RestaurantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CCF8322A06A0460085839D /* RestaurantApp.swift */; };
 		D7CCF8352A06A0460085839D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CCF8342A06A0460085839D /* MainView.swift */; };
 		D7CCF8372A06A0480085839D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7CCF8362A06A0480085839D /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7456C7A2A12EA34002A3F09 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		D7CCF82F2A06A0460085839D /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CCF8322A06A0460085839D /* RestaurantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantApp.swift; sourceTree = "<group>"; };
 		D7CCF8342A06A0460085839D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				D7CCF8472A0879C80085839D /* DataService.swift */,
 				D7CCF8462A0879C70085839D /* MenuItem.swift */,
 				D7CCF8482A0879C80085839D /* MenuListRow.swift */,
+				D7456C7A2A12EA34002A3F09 /* PhotoView.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				D7CCF8452A0876C40085839D /* MenuView.swift in Sources */,
 				D7CCF84A2A0879C80085839D /* DataService.swift in Sources */,
 				D7CCF8352A06A0460085839D /* MainView.swift in Sources */,
+				D7456C7B2A12EA34002A3F09 /* PhotoView.swift in Sources */,
 				D7CCF8412A06A1160085839D /* AboutView.swift in Sources */,
 				D7CCF8492A0879C80085839D /* MenuItem.swift in Sources */,
 				D7CCF84B2A0879C80085839D /* MenuListRow.swift in Sources */,
