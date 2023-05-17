@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct PhotoView: View {
+    
+    @Binding var selectedPhoto: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(selectedPhoto)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+        
     }
 }
 
 struct PhotoView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoView()
+        PhotoView(selectedPhoto: Binding.constant("gallery2"))
     }
 }

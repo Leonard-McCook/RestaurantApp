@@ -71,11 +71,11 @@
 				D7CCF8382A06A0480085839D /* Preview Content */,
 				D7CCF8402A06A1160085839D /* AboutView.swift */,
 				D7CCF8422A0876770085839D /* GalleryView.swift */,
+				D7456C7A2A12EA34002A3F09 /* PhotoView.swift */,
 				D7CCF8442A0876C40085839D /* MenuView.swift */,
 				D7CCF8472A0879C80085839D /* DataService.swift */,
 				D7CCF8462A0879C70085839D /* MenuItem.swift */,
 				D7CCF8482A0879C80085839D /* MenuListRow.swift */,
-				D7456C7A2A12EA34002A3F09 /* PhotoView.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
