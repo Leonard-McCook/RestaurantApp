@@ -50,7 +50,8 @@ struct GalleryView: View {
             photoData = dataService.getPhotos()
         }
         .sheet(isPresented: $sheetVisible) {
-            PhotoView(selectedPhoto: $selectedPhoto)
+            PhotoView(selectedPhoto: $selectedPhoto,
+                      sheetVisible: $sheetVisible)
         }
     }
 }
